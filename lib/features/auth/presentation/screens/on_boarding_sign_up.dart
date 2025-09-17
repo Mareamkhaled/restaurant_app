@@ -37,15 +37,11 @@ class OnBoardingSignUpScreen extends StatelessWidget {
             ),
             const SizedBox(height: 10),
 
-            SizedBox(
-              width: double.infinity,
-              height: 50,
-              child: CustomButton(
-                text: AppStrings.signUp,
-                onTap: () {
-                  GoRouter.of(context).push(AppStrings.signUpScreen);
-                },
-              ),
+            CustomButton(
+              text: AppStrings.signUp,
+              onTap: () {
+                GoRouter.of(context).push(AppStrings.signUpScreen);
+              },
             ),
 
             const SizedBox(height: 10),
