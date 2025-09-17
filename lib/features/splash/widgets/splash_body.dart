@@ -17,7 +17,7 @@ class _SplashBodyState extends State<SplashBody>
   void initState() {
     Future.delayed(const Duration(seconds: 5), () {
       // ignore: use_build_context_synchronously
-      customNavigation(context, AppStrings.testScreen);
+      customNavigation(context, AppStrings.onBoardingSignUpScreen);
     });
 
     super.initState();

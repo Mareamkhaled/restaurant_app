@@ -2,6 +2,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+import 'core/utils/app_colors.dart';
 import 'core/utils/app_router.dart';
 
 void main() => runApp(
@@ -16,6 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       routerConfig: router,
+      theme: ThemeData(
+        scaffoldBackgroundColor: AppColors.white
+      ),
     );
   }
 }
